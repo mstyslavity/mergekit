@@ -11,17 +11,17 @@ version = "0.1.5"
 authors = [{ name = "Charles Goddard", email = "chargoddard@gmail.com" }]
 requires-python = ">=3.10"
 dependencies = [
-    "torch>=2.0.0",
-    "tqdm>=4.67.1,<5",
-    "click>=8.2.1,<9",
-    "safetensors>=0.5.2,<1",
-    "accelerate>=1.6.0,<2",
-    "pydantic>=2.10.6,<3",
-    "immutables>=0.21,<1",
-    "transformers>=5.0,<6.0",
-    "tokenizers>=0.20.1",
+    "torch",
+    "tqdm",
+    "click",
+    "safetensors",
+    "accelerate",
+    "pydantic",
+    "immutables",
+    "transformers",
+    "tokenizers",
     "huggingface_hub",
-    "peft>=0.18.0",
+    "peft",
     "typing-extensions",
     "sentencepiece",
     "protobuf",
@@ -91,5 +91,5 @@ filterwarnings = [
 testpaths = ["tests"]
 
 [dependency-groups]
-test = ["pytest>=8.4.0,<9"]
+test = ["pytest"]
 dev = ["ruff==0.14.2", "pre-commit>=4.2.0,<5"]
